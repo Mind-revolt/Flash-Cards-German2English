@@ -41,7 +41,7 @@ def flip_cards():
 
 # -------------------------------- WORD LEARNED ---------------------------------------- #
 try:
-    words_to_learn_csv = pandas.read_csv('data/words_to_learn1.csv')
+    words_to_learn_csv = pandas.read_csv('data/words_to_learn1.csv', index_col=False)
     words_to_learn = words_to_learn_csv.to_dict(orient='records')
 except FileNotFoundError:
     pass
